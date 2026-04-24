@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Marco Fisher | Luminous Portfolio</title>
+  
+  <!-- Google Fonts: Manrope -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LUMINOUS SLOW-MOVING ORBS -->
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="orb orb4"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Marco Fisher</a>
+      <div class="nav-links">
+        <a href="#home" class="animate-fade-up delay-1">Home</a>
+        <a href="#about" class="animate-fade-up delay-2">About</a>
+        <a href="#skills" class="animate-fade-up delay-3">Skills</a>
+        <a href="#projects" class="animate-fade-up delay-4">Projects</a>
+        <a href="#contact" class="animate-fade-up delay-5">Contact</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="status-badge animate-fade-up">
+          <span class="status-dot"></span>
+          <span>Open to opportunities</span>
+        </div>
+        <h1 class="animate-fade-up delay-1">
+          I turn <span class="gradient-text">complex problems</span><br>
+          into elegant code.
+        </h1>
+        <div class="hero-stats animate-fade-up delay-2">
+          <div class="stat">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Projects Shipped</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">Full-Stack</span>
+            <span class="stat-label">Vue • Node • Oracle</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Problem Solver</span>
+          </div>
+        </div>
+        <p class="hero-description animate-fade-up delay-3">
+          Entry-level full stack developer with <strong class="copper-text">modern JS skills</strong> 
+          and <strong class="copper-text">enterprise Oracle APEX</strong> experience.
+        </p>
+        <div class="btn-group animate-fade-up delay-4">
+          <a href="#projects" class="btn btn-primary btn-glow">See My Work</a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+        <div class="trust-badge animate-fade-up delay-5">
+          <i class="fas fa-check-circle"></i>
+          <span>Available for junior roles • Quick learner • Team player</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="animate-fade-up">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="animate-fade-up delay-1">Entry-level full stack developer — Vue.js, Node.js, Oracle APEX, PL/SQL.</p>
+          <p class="animate-fade-up delay-2">Clean code, thoughtful design, continuous growth. Curious problem-solver.</p>
+          <p class="animate-fade-up delay-3">Exploring UI/UX principles and contributing to open-source.</p>
+        </div>
+        <div class="quote animate-fade-up delay-4">
+          <i class="fas fa-quote-left"></i>
+          <p>"I don't remember every detail — but I always know how to figure things out."</p>
+          <p style="margin-top: 12px; color: var(--accent);">— Marco Fisher</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="animate-fade-up">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-category animate-fade-up delay-1">
+          <h4><i class="fas fa-code"></i> Frontend</h4>
+          <div class="skill-items">
+            <span class="skill-item">Vue.js</span><span class="skill-item">HTML5</span>
+            <span class="skill-item">CSS3</span><span class="skill-item">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category animate-fade-up delay-2">
+          <h4><i class="fas fa-server"></i> Backend</h4>
+          <div class="skill-items">
+            <span class="skill-item">Node.js</span><span class="skill-item">Python</span>
+            <span class="skill-item">REST APIs</span><span class="skill-item">PL/SQL</span>
+          </div>
+        </div>
+        <div class="skill-category animate-fade-up delay-3">
+          <h4><i class="fas fa-database"></i> Database</h4>
+          <div class="skill-items">
+            <span class="skill-item">MySQL</span><span class="skill-item">Oracle DB</span>
+          </div>
+        </div>
+        <div class="skill-category animate-fade-up delay-4">
+          <h4><i class="fas fa-tools"></i> Tools</h4>
+          <div class="skill-items">
+            <span class="skill-item">Git/GitHub</span><span class="skill-item">VS Code</span>
+            <span class="skill-item">Oracle APEX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="animate-fade-up">Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card animate-fade-up delay-1">
+          <div class="project-icon">🪵</div>
+          <h3 class="project-title">Wood Craft Workshop</h3>
+          <p>Full-stack e-commerce with Vue, Node, MySQL, PayFast.</p>
+          <div class="tech-stack"><span class="tech-tag">Vue.js</span><span class="tech-tag">Node.js</span><span class="tech-tag">MySQL</span><span class="tech-tag">PayFast</span></div>
+          <a href="https://github.com/DanielWatterson/Group-3_E-Commerce_Project.git" class="project-link">View on GitHub →</a>
+        </div>
+        <div class="project-card animate-fade-up delay-2">
+          <div class="project-icon">📊</div>
+          <h3 class="project-title">OT Enterprises Insights</h3>
+          <p>Interactive dashboard with Oracle APEX, PL/SQL, charts.</p>
+          <div class="tech-stack"><span class="tech-tag">Oracle APEX</span><span class="tech-tag">PL/SQL</span><span class="tech-tag">Oracle DB</span></div>
+          <a href="https://github.com/marcofisher21-svg/oracle-apex-OT-Enterprises.git" class="project-link">View on GitHub →</a>
+        </div>
+        <div class="project-card animate-fade-up delay-3">
+          <div class="project-icon">⚙️</div>
+          <h3 class="project-title">More Projects</h3>
+          <p>Vue.js dashboard & REST APIs — in progress.</p>
+          <div class="tech-stack"><span class="tech-tag">Vue.js</span><span class="tech-tag">REST APIs</span><span class="tech-tag">In Progress</span></div>
+          <span class="project-link" style="opacity:0.6;">Coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="animate-fade-up">Let's Connect</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:marco.fisher@example.com">marco.fisher@example.com</a></div>
+          <div class="contact-item"><i class="fab fa-github"></i><a href="https://github.com/marcofisher21-svg">github.com/marcofisher21-svg</a></div>
+          <div class="contact-item"><i class="fab fa-linkedin"></i><a href="#">linkedin.com/in/marco-fisher</a></div>
+          <div class="social-links"><a href="https://github.com/marcofisher21-svg"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group"><label>Name</label><input type="text" id="name" required placeholder="Your name"></div>
+            <div class="form-group"><label>Email</label><input type="email" id="email" required placeholder="your.email@example.com"></div>
+            <div class="form-group"><label>Message</label><textarea id="message" required rows="4" placeholder="I'd love to hear from you..."></textarea></div>
+            <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            <div id="formMessage" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container"><p>© 2026 Marco Erin Fisher — Luminous Warm Obsidian Theme</p></div></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

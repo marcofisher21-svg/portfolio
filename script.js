@@ -46,28 +46,44 @@ if (toggleBtn) {
   });
 }
 
-// Contact Form Handler
+// Contact Form Handler (Formspree)
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
 
 if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+    
     const submitBtn = document.querySelector('.submit-btn');
     const originalText = submitBtn.innerHTML;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
     submitBtn.disabled = true;
 
-    setTimeout(() => {
-      formMessage.className = 'form-message success';
-      formMessage.innerHTML = '✅ Message sent! I\'ll get back to you soon.';
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        formMessage.className = 'form-message success';
+        formMessage.innerHTML = '✅ Message sent successfully! I\'ll get back to you soon.';
+        formMessage.style.display = 'block';
+        contactForm.reset();
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      formMessage.className = 'form-message error';
+      formMessage.innerHTML = '❌ Oops! Something went wrong. Please try again or email me directly.';
       formMessage.style.display = 'block';
-      contactForm.reset();
+    } finally {
       submitBtn.innerHTML = originalText;
       submitBtn.disabled = false;
       setTimeout(() => { formMessage.style.display = 'none'; }, 5000);
-    }, 1500);
+    }
   });
 }
-
-console.log("%c✨ Luminous Portfolio | Marco Fisher", "color: #E88D4D; font-size: 16px; font-weight: bold;");

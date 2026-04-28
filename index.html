@@ -180,13 +180,24 @@
           <div class="contact-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/marco-fisher-a768a13b1/?skipRedirect=true">linkedin.com/in/marco-fisher</a></div>
           <div class="social-links"><a href="https://github.com/marcofisher21-svg"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/marco-fisher-a768a13b1/?skipRedirect=true"><i class="fab fa-linkedin"></i></a></div>
         </div>
-        <div class="contact-form">
-          <form id="contactForm">
-            <div class="form-group"><label>Name</label><input type="text" id="name" required placeholder="Your name"></div>
-            <div class="form-group"><label>Email</label><input type="email" id="email" required placeholder="your.email@example.com"></div>
-            <div class="form-group"><label>Message</label><textarea id="message" required rows="4" placeholder="I'd love to hear from you..."></textarea></div>
-            <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
-            <div id="formMessage" class="form-message"></div>
+<div class="contact-form">
+  <form id="contactForm" action="https://formspree.io/f/xyklqodn" method="POST">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" id="name" required placeholder="Your name">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" id="email" required placeholder="your.email@example.com">
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea name="message" id="message" required rows="4" placeholder="I'd love to hear from you..."></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+    <div id="formMessage" class="form-message"></div>
+  </form>
+</div>
           </form>
         </div>
       </div>

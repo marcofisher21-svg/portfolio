@@ -3,37 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Marco Fisher — Entry-level full stack developer. Vue.js, Node.js, Oracle APEX, PL/SQL. Tech Lead on SpySee, a live attendance platform. Open to junior roles.">
+  <meta name="theme-color" content="#0A0612">
   <title>Marco Fisher | Luminous Portfolio</title>
-  
+
   <!-- Google Fonts: Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
+
   <!-- External Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- LUMINOUS SLOW-MOVING ORBS -->
-  <div class="orb orb1"></div>
-  <div class="orb orb2"></div>
-  <div class="orb orb3"></div>
-  <div class="orb orb4"></div>
+  <div class="orb orb1" aria-hidden="true"></div>
+  <div class="orb orb2" aria-hidden="true"></div>
+  <div class="orb orb3" aria-hidden="true"></div>
+  <div class="orb orb4" aria-hidden="true"></div>
 
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="#" class="logo">Marco Fisher</a>
+      <a href="#home" class="logo">Marco Fisher</a>
       <div class="nav-links">
         <a href="#home" class="animate-fade-up delay-1">Home</a>
         <a href="#about" class="animate-fade-up delay-2">About</a>
         <a href="#skills" class="animate-fade-up delay-3">Skills</a>
         <a href="#projects" class="animate-fade-up delay-4">Projects</a>
-        <a href="#contact" class="animate-fade-up delay-5">Contact</a>
+        <a href="#spysee" class="animate-fade-up delay-5">Case Study</a>
+        <a href="#contact" class="animate-fade-up delay-6">Contact</a>
       </div>
-      <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" type="button">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+      </button>
     </div>
   </nav>
 
@@ -42,7 +49,7 @@
     <div class="container">
       <div class="hero-content">
         <div class="status-badge animate-fade-up">
-          <span class="status-dot"></span>
+          <span class="status-dot" aria-hidden="true"></span>
           <span>Open to opportunities</span>
         </div>
         <h1 class="animate-fade-up delay-1">
@@ -51,34 +58,36 @@
         </h1>
         <div class="hero-stats animate-fade-up delay-2">
           <div class="stat">
-            <span class="stat-number">2+</span>
+            <span class="stat-number">3+</span>
             <span class="stat-label">Projects Shipped</span>
           </div>
-          <div class="stat-divider"></div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Live in Production</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
           <div class="stat">
             <span class="stat-number">Full-Stack</span>
-            <span class="stat-label">Vue • Node • Oracle</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Problem Solver</span>
+            <span class="stat-label">Vue • Node • Oracle • PHP</span>
           </div>
         </div>
         <p class="hero-description animate-fade-up delay-3">
-          Entry-level full stack developer with <strong class="copper-text">modern JS skills</strong> 
-          and <strong class="copper-text">enterprise Oracle APEX</strong> experience.
+          Entry-level full stack developer with <strong class="copper-text">modern JS skills</strong>,
+          <strong class="copper-text">enterprise Oracle APEX</strong> experience, and a live
+          <strong class="copper-text">production deployment</strong> as Tech Lead.
         </p>
         <div class="btn-group animate-fade-up delay-4">
           <a href="#projects" class="btn btn-primary btn-glow">See My Work</a>
-          <a href="#contact" class="btn btn-outline">Hire Me</a>
           <a href="cv/Marco_Fisher_CV.pdf" class="btn btn-outline" download>
-            <i class="fas fa-download"></i> Download CV
+            <i class="fas fa-download" aria-hidden="true"></i> Download CV
           </a>
         </div>
         <div class="trust-badge animate-fade-up delay-5">
-          <i class="fas fa-check-circle"></i>
-          <span>Available for junior roles • Quick learner • Team player</span>
+          <i class="fas fa-check-circle" aria-hidden="true"></i>
+          <span>Shipped a live product as Tech Lead &amp; Scrum Master —
+            <a href="#spysee" class="inline-link">read the case study</a>
+          </span>
         </div>
       </div>
     </div>
@@ -91,11 +100,11 @@
       <div class="about-content">
         <div class="about-text">
           <p class="animate-fade-up delay-1">Entry-level full stack developer — Vue.js, Node.js, Oracle APEX, PL/SQL.</p>
-          <p class="animate-fade-up delay-2">Clean code, thoughtful design, continuous growth. Curious problem-solver.</p>
-          <p class="animate-fade-up delay-3">Exploring UI/UX principles and contributing to open-source.</p>
+          <p class="animate-fade-up delay-2">Tech Lead and Scrum Master on SpySee, a live attendance platform for frontline staff.</p>
+          <p class="animate-fade-up delay-3">Clean code, thoughtful design, continuous growth. Curious problem-solver exploring UI/UX and open-source.</p>
         </div>
         <div class="quote animate-fade-up delay-4">
-          <i class="fas fa-quote-left"></i>
+          <i class="fas fa-quote-left" aria-hidden="true"></i>
           <p>"I don't remember every detail — but I always know how to figure things out."</p>
           <p style="margin-top: 12px; color: var(--accent);">— Marco Fisher</p>
         </div>
@@ -109,30 +118,31 @@
       <h2 class="animate-fade-up">Tech Stack</h2>
       <div class="skills-grid">
         <div class="skill-category animate-fade-up delay-1">
-          <h4><i class="fas fa-code"></i> Frontend</h4>
+          <h4><i class="fas fa-code" aria-hidden="true"></i> Frontend</h4>
           <div class="skill-items">
             <span class="skill-item">Vue.js</span><span class="skill-item">HTML5</span>
             <span class="skill-item">CSS3</span><span class="skill-item">JavaScript</span>
           </div>
         </div>
         <div class="skill-category animate-fade-up delay-2">
-          <h4><i class="fas fa-server"></i> Backend</h4>
+          <h4><i class="fas fa-server" aria-hidden="true"></i> Backend</h4>
           <div class="skill-items">
-            <span class="skill-item">Node.js</span><span class="skill-item">Python</span>
-            <span class="skill-item">REST APIs</span><span class="skill-item">PL/SQL</span>
+            <span class="skill-item">Node.js</span><span class="skill-item">PHP</span>
+            <span class="skill-item">Python</span><span class="skill-item">REST APIs</span>
+            <span class="skill-item">PL/SQL</span>
           </div>
         </div>
         <div class="skill-category animate-fade-up delay-3">
-          <h4><i class="fas fa-database"></i> Database</h4>
+          <h4><i class="fas fa-database" aria-hidden="true"></i> Database</h4>
           <div class="skill-items">
             <span class="skill-item">MySQL</span><span class="skill-item">Oracle DB</span>
           </div>
         </div>
         <div class="skill-category animate-fade-up delay-4">
-          <h4><i class="fas fa-tools"></i> Tools</h4>
+          <h4><i class="fas fa-tools" aria-hidden="true"></i> Tools</h4>
           <div class="skill-items">
             <span class="skill-item">Git/GitHub</span><span class="skill-item">VS Code</span>
-            <span class="skill-item">Oracle APEX</span>
+            <span class="skill-item">Oracle APEX</span><span class="skill-item">FileZilla</span>
           </div>
         </div>
       </div>
@@ -144,56 +154,239 @@
     <div class="container">
       <h2 class="animate-fade-up">Featured Projects</h2>
       <div class="project-grid">
-        <div class="project-card animate-fade-up delay-1">
-          <div class="project-icon">🪵</div>
+
+        <!-- SpySee — FLAGSHIP -->
+        <div class="project-card featured animate-fade-up delay-1">
+          <div class="project-icon" aria-hidden="true">
+            <i class="fas fa-qrcode"></i>
+          </div>
+          <h3 class="project-title">
+            SpySee
+            <span class="live-badge">
+              <span class="live-dot" aria-hidden="true"></span>Live
+            </span>
+          </h3>
+          <p>
+            Real-time digital attendance for frontline staff. QR sign-in, live onsite visibility,
+            Google Sheets sync. Built as <strong>Tech Lead &amp; Scrum Master</strong> — I owned
+            the attendance logic, led sprints, QA'd releases, and deployed the live build.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">QR Auth</span>
+            <span class="tech-tag">FileZilla Deploy</span>
+          </div>
+          <div class="project-links">
+            <a href="https://spysee.lcstudio-incubate.co.za"
+               class="btn btn-primary project-cta"
+               target="_blank"
+               rel="noopener noreferrer">
+              Live Demo <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Life-Choices-Cohort-17-v2/Digital-Attendence-Project"
+               class="btn btn-outline project-cta"
+               target="_blank"
+               rel="noopener noreferrer">
+              Code <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Wood Craft Workshop -->
+        <div class="project-card animate-fade-up delay-2">
+          <div class="project-icon" aria-hidden="true">
+            <i class="fas fa-tree"></i>
+          </div>
           <h3 class="project-title">Wood Craft Workshop</h3>
           <p>Full-stack e-commerce with Vue, Node, MySQL, PayFast.</p>
-          <div class="tech-stack"><span class="tech-tag">Vue.js</span><span class="tech-tag">Node.js</span><span class="tech-tag">MySQL</span><span class="tech-tag">PayFast</span></div>
-          <a href="https://github.com/DanielWatterson/Group-3_E-Commerce_Project.git" class="project-link">View on GitHub →</a>
+          <div class="tech-stack">
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">PayFast</span>
+          </div>
+          <a href="https://github.com/DanielWatterson/Group-3_E-Commerce_Project.git"
+             class="project-link"
+             target="_blank"
+             rel="noopener noreferrer">
+            View on GitHub <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
-        <div class="project-card animate-fade-up delay-2">
-          <div class="project-icon">📊</div>
+
+        <!-- OT Enterprises Insights -->
+        <div class="project-card animate-fade-up delay-3">
+          <div class="project-icon" aria-hidden="true">
+            <i class="fas fa-chart-line"></i>
+          </div>
           <h3 class="project-title">OT Enterprises Insights</h3>
           <p>Interactive dashboard with Oracle APEX, PL/SQL, charts.</p>
-          <div class="tech-stack"><span class="tech-tag">Oracle APEX</span><span class="tech-tag">PL/SQL</span><span class="tech-tag">Oracle DB</span></div>
-          <a href="https://github.com/marcofisher21-svg/oracle-apex-OT-Enterprises.git" class="project-link">View on GitHub →</a>
+          <div class="tech-stack">
+            <span class="tech-tag">Oracle APEX</span>
+            <span class="tech-tag">PL/SQL</span>
+            <span class="tech-tag">Oracle DB</span>
+          </div>
+          <a href="https://github.com/marcofisher21-svg/oracle-apex-OT-Enterprises.git"
+             class="project-link"
+             target="_blank"
+             rel="noopener noreferrer">
+            View on GitHub <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
-        <div class="project-card animate-fade-up delay-3">
-          <div class="project-icon">⚙️</div>
+
+        <!-- More Projects -->
+        <div class="project-card animate-fade-up delay-4">
+          <div class="project-icon" aria-hidden="true">
+            <i class="fas fa-gears"></i>
+          </div>
           <h3 class="project-title">More Projects</h3>
-          <p>Vue.js dashboard & REST APIs — in progress.</p>
-          <div class="tech-stack"><span class="tech-tag">Vue.js</span><span class="tech-tag">REST APIs</span><span class="tech-tag">In Progress</span></div>
-          <span class="project-link" style="opacity:0.6;">Coming soon</span>
+          <p>Vue.js dashboard &amp; REST APIs — in progress.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">REST APIs</span>
+            <span class="tech-tag">In Progress</span>
+          </div>
+          <span class="project-link coming-soon" aria-disabled="true">Coming soon</span>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
+  <!-- SpySee Case Study -->
+  <section id="spysee" class="case-study">
     <div class="container">
-      <h2 class="animate-fade-up">Let's Connect</h2>
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:marco.fisher21@gmail.com">marco.fisher21@gmail.com</a></div>
-          <div class="contact-item"><i class="fab fa-github"></i><a href="https://github.com/marcofisher21-svg">github.com/marcofisher21-svg</a></div>
-          <div class="contact-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/marco-fisher-a768a13b1/?skipRedirect=true">linkedin.com/in/marco-fisher</a></div>
-          <div class="social-links"><a href="https://github.com/marcofisher21-svg"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/marco-fisher-a768a13b1/?skipRedirect=true"><i class="fab fa-linkedin"></i></a></div>
+      <h2 class="animate-fade-up">Case Study: SpySee</h2>
+      <p class="case-intro animate-fade-up delay-1">
+        A live attendance platform used by frontline staff — from problem framing through
+        production deployment.
+      </p>
+
+      <div class="case-grid">
+
+        <div class="case-block animate-fade-up delay-2">
+          <div class="case-icon" aria-hidden="true">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>The Problem</h3>
+          <p>
+            Manual attendance for frontline teams was slow, error-prone, and gave managers no
+            real-time visibility into who was actually on site. Sign-in queues ate into productive
+            time and reports were compiled by hand.
+          </p>
         </div>
+
+        <div class="case-block animate-fade-up delay-3">
+          <div class="case-icon" aria-hidden="true">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>The Approach</h3>
+          <p>
+            As <strong>Tech Lead &amp; Scrum Master</strong>, I ran sprint planning, broke the
+            build into shippable slices, and owned the <strong>attendance logic</strong> — the
+            core clock-in/out engine that determines presence, lateness, and shift completion.
+            I also QA'd each release and coordinated the live deployment.
+          </p>
+        </div>
+
+        <div class="case-block animate-fade-up delay-4">
+          <div class="case-icon" aria-hidden="true">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>The Outcome</h3>
+          <p>
+            A live, production-deployed web app with sub-2-second QR sign-in, live onsite
+            dashboards for admins, and Google Sheets sync for reporting. Deployed to
+            <strong>lcstudio-incubate.co.za</strong> alongside teammate Dominic Peck using FileZilla.
+          </p>
+        </div>
+
+        <div class="case-block animate-fade-up delay-5">
+          <div class="case-icon" aria-hidden="true">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>My Role</h3>
+          <ul class="role-list">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Tech Lead — architecture &amp; code review</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Scrum Master — sprint planning &amp; standups</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Attendance logic — core sign-in engine</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> QA testing — release validation</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Live deployment — FileZilla with Dominic Peck</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="case-cta animate-fade-up delay-6">
+        <a href="https://spysee.lcstudio-incubate.co.za"
+           class="btn btn-primary btn-glow"
+           target="_blank"
+           rel="noopener noreferrer">
+          Try SpySee Live <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/Life-Choices-Cohort-17-v2/Digital-Attendence-Project"
+           class="btn btn-outline"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Source <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact-info">
+  <div class="contact-item">
+    <i class="fas fa-envelope" aria-hidden="true"></i>
+    <a href="mailto:marcofisher21@gmail.com">marcofisher21@gmail.com</a>
+  </div>
+  <div class="contact-item">
+    <i class="fab fa-github" aria-hidden="true"></i>
+    <a href="https://github.com/marcofisher21-svg" target="_blank" rel="noopener noreferrer">
+      github.com/marcofisher21-svg
+    </a>
+  </div>
+  <div class="contact-item">
+    <i class="fab fa-linkedin" aria-hidden="true"></i>
+    <a href="https://www.linkedin.com/in/marco-fisher-a768a13b1/?skipRedirect=true"
+       target="_blank"
+       rel="noopener noreferrer">
+      linkedin.com/in/marco-fisher
+    </a>
+  </div>
+</div>
         <div class="contact-form">
-          <form id="contactForm">
-            <div class="form-group"><label>Name</label><input type="text" id="name" required placeholder="Your name"></div>
-            <div class="form-group"><label>Email</label><input type="email" id="email" required placeholder="your.email@example.com"></div>
-            <div class="form-group"><label>Message</label><textarea id="message" required rows="4" placeholder="I'd love to hear from you..."></textarea></div>
-            <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
-            <div id="formMessage" class="form-message"></div>
+          <form id="contactForm" action="https://formspree.io/f/mkjgeadp" method="POST" novalidate>
+            <!-- Fallback redirect for no-JS users -->
+            <input type="hidden" name="_next" value="https://your-portfolio-url.com/#contact">
+            <input type="hidden" name="_subject" value="New portfolio contact form submission">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your.email@example.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required rows="4" placeholder="I'd love to hear from you..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            </button>
+            <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <footer><div class="container"><p>© 2026 Built by Marco Erin Fisher</p></div></footer>
+  <footer>
+    <div class="container">
+      <p>© <span id="year">2026</span> Built by Marco Erin Fisher</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
